@@ -58,3 +58,18 @@ an = PartyAnimals()
 an.party()
 an.party()
 an = 42
+
+# Inheritance
+
+# When we make a new class- we can reuse an existing calss and inherit all
+# the capabilities of an existing class then add our own bit to make a new class
+# another form of store and reuse
+# Write once- reuse many times
+# The new class (child) has all the capabilities of the old class (parent) and then some
+
+class FootballFan(PartyAnimals): # FootballFan is a class that extends PartyAnimals
+    points = 0
+    def touchdown(self):
+        self.points = self.points + 7
+        self.party()
+        print(self.name, "points", self.points)
